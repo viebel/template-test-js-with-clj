@@ -1,4 +1,5 @@
-(ns js-test-in-cljs.test.runner)
+(ns js-test-in-cljs.test.runner
+  (:require [doo.runner :refer-macros [doo-tests]]
+            [js-test-in-cljs.test.core-test]))
 
-(enable-console-print!)
-(print 1)
+(doo-tests 'js-test-in-cljs.test.core-test)

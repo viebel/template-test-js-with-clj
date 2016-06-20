@@ -12,3 +12,4 @@ pom.xml.asc
 .nrepl-port
 figwheel_server.log
 resources/public/fig/*
+resources/public/test/*
