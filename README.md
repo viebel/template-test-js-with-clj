@@ -10,6 +10,8 @@ There is a `javascript` file `main.js` that defines a `javascript` function `foo
 
 There is a `clojurescript` file `core_test.cljs` that tests `foo`.
 
+![core_test.cljs](https://raw.githubusercontent.com/viebel/template-test-js-with-clj/master/images/clj-test-for-js.jpg)
+
 In `project.clj`, `main.js` is defined as a `:foreign-libs`, so we can `:require` it from `clojurescript`.
 
 Simple, no?
