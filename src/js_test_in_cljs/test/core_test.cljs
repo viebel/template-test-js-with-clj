@@ -1,5 +1,6 @@
 (ns js-test-in-cljs.test.core-test
   (:require
+    js.main
     [clojure.test.check :as tc]
     [clojure.test.check.generators :as gen]
     [clojure.test.check.properties :as prop :include-macros true]
@@ -14,7 +15,7 @@
 
 (defspec check-foo 200
   (prop/for-all [n gen/int]
-                (= 0 (js/foo n))))
+                (= (* n n) (js/foo n))))
 
 
 
