@@ -14,6 +14,8 @@ There is a `clojurescript` file `core_test.cljs` that tests `foo`.
 
 In `project.clj`, `main.js` is defined as a `:foreign-libs`, so we can `:require` it from `clojurescript`.
 
+The tests are run with [lein doo](https://github.com/bensu/doo).
+
 Simple, no?
 
 # How to run
